@@ -60,6 +60,7 @@ export class Autocomplete extends Component {
           <div className="content">
             <input
               type="text"
+              className="responsive"
               value={inputValue}
               placeholder="Enter location"
               onChange={this.onInputChange.bind(this)}

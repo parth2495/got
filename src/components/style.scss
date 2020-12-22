@@ -3,6 +3,7 @@ $solid-color: rgba(15, 15, 15, 0.2);
 $result-text-color: #424444;
 $base-color: #666b6b;
 
+
 .search {
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@ $base-color: #666b6b;
 
   .content {
     input {
-      width: 30em;
+      
       height: 42px;
       border: 0;
       border-radius: 10px;
@@ -45,9 +46,10 @@ $base-color: #666b6b;
 
   .content-half {
     input {
-      width: 15em;
+      
       height: 42px;
       margin-top: 10px;
+      
       border: 0;
       border-radius: 10px;
       box-shadow: 0px 0px 15px 3px $solid-color;
@@ -85,8 +87,7 @@ $base-color: #666b6b;
       padding: 0 0 30px 0;
 
       .item {
-        height: 33px;
-        width: 30em;
+        height: 33px;        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -115,5 +116,37 @@ $base-color: #666b6b;
       padding: 2px 3px;
       color: $base-color;
     }
+  }
+}
+
+@media (max-width: 650px){
+  
+  .responsive {
+    width: 15em;
+    
+  }
+
+  .item {
+    width: 15em;
+  }
+
+  .res_in {
+    width: 15em;
+  }
+}
+
+@media (min-width: 650px){
+  .responsive {
+    width: 30em;
+  }
+
+  .item {
+    width: 30em;
+  }
+
+  .res_in {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 14em;
   }
 }

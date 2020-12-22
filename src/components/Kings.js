@@ -38,6 +38,7 @@ export class Kings extends Component {
 		          <div className="content-half">
 		            <input
 		              type="text"
+		              className="res_in"
 		              onBlur={this.onBlur}
 		              onChange={this.onInputChange.bind(this)}
 		              placeholder="Enter King's Name"              

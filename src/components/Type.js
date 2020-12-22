@@ -30,7 +30,8 @@ export class Type extends Component {
 		        <div className="search-container">
 		          <div className="content-half">
 		            <input
-		              type="text"              
+		              type="text"   
+		              className="res_in"           
 		              placeholder="Enter Type" 
 		              onBlur={this.onBlur} 
 		              onChange={this.onInputChange.bind(this)}           

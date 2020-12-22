@@ -1,4 +1,5 @@
 import React from "react";
+import './search.scss';
 //import Search from "../components/search";
 import { connect } from "react-redux";
 import { fetchList } from '../actions/location_actions'
@@ -64,16 +65,18 @@ class Search extends React.Component {
       <div className="page">
         <div className="page-container">
           <Autocomplete list={location} selectedLocation={this.selectLocation} />
-          {!isLocation?'':
-          <span>
-            <Kings king={this.kingName} />
-          </span>
-          }
-          {!isLocation?'':
-          <span>
-            <Type type={this.inputType} />
-          </span>
-          }
+          <div className="sideByside" >  
+            {!isLocation?'':
+            <span>
+              <Kings king={this.kingName} />
+            </span>
+            }
+            {!isLocation?'':
+            <span>
+              <Type type={this.inputType} />
+            </span>
+            }
+          </div>  
           <div className="container">
           </div>
         </div>
