@@ -13,15 +13,10 @@
   color: #666b6b;
 }
 
-Card {
-  max-width: 30em;
-}
 
 .wars {
   margin: auto;
   margin-top: 20px;
-  width: 10em;
-  border-radius: 10%;
   color: white;
 }
 
@@ -30,4 +25,17 @@ Card {
   height: 50px;
   border-radius: 3%;
   width: 200px;
+}
+
+@media (max-width: 650px){
+  .wars {
+    width: 21em;
+  }
+  
+}
+
+@media (min-width: 650px){
+  .wars {
+    width: 40em;
+  }
 }

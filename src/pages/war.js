@@ -19,7 +19,7 @@ class War extends React.Component {
 		const { war } = this.props;
 
 		return(
-			<Card style={{ width: '40em', backgroundColor: '#171717', borderRadius: '3%' }} className="wars">
+			<Card style={{ backgroundColor: '#696969', borderRadius: '3%' }} className="wars">
                 <Card.Body  >
                 	<Card.Title><h1>{war.name}</h1></Card.Title>
                     <Card.Title><h3>{war.attacker_king} vs. {war.defender_king}</h3></Card.Title>

@@ -38,7 +38,7 @@ class App extends React.Component {
   var namesList = wars.map((index) => {
                         console.log(index); 
                         return (
-                              <Card style={{ width: '40em', backgroundColor: '#171717', borderRadius: '3%' }} className="wars">
+                              <Card style={{ backgroundColor: '#696969', borderRadius: '3%' }} className="wars">
                                 <Card.Body  >
                                   <Card.Title><h3>{index.attacker_king} vs. {index.defender_king}</h3></Card.Title>
                                   <Card.Text>
