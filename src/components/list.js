@@ -28,7 +28,7 @@ export default class List extends React.Component {
               })}
             {!items && <div className="warning">Nothing Found!</div>}
           </div>
-          <div className="footer">Type Keyword to search for food</div>
+          <div className="footer">Type Keyword to search for war locations</div>
         </div>
       </div>
     );
