@@ -25,9 +25,8 @@ export class Autocomplete extends Component {
   onInputChange(e) {
     const { list } = this.props;
     const keyword = e.target.value;
-    
     const foundLocations = list.filter((item, idx) => {
-      return item.location.toLowerCase().includes(keyword);
+      return item.toLowerCase().includes(keyword);
     });
     this.setState({foundLocations,inputValue:keyword});
   }

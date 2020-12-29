@@ -36,7 +36,7 @@ class Search extends React.Component {
   selectLocation(item)
   {
     console.log(item);
-    this.props.setLocation(item.location);
+    this.props.setLocation(item);
     this.setState({isLocation:true});
   }
 
