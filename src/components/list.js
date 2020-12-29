@@ -22,7 +22,7 @@ export default class List extends React.Component {
               items.map((item, idx) => {
                 return (
                   <div className="item" key={idx} onClick={this.selectLocation.bind(this,item)} >
-                    {item.location}
+                    {item}
                   </div>
                 );
               })}
