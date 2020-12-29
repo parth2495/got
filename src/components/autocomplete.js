@@ -18,7 +18,7 @@ export class Autocomplete extends Component {
   handleSelect(item)
   {
     console.log(item);
-    this.setState({inputValue:item.location,showResult:false});
+    this.setState({inputValue:item,showResult:false});
     this.props.selectedLocation(item);
   }
 
